@@ -1,0 +1,21 @@
+# One domain term per line. Replace with your meeting domain.
+Kubernetes
+PostgreSQL
+Kafka
+Terraform
+Grafana
+Prometheus
+microservices
+OAuth
+GraphQL
+Redis
+CI/CD
+latency
+throughput
+sprint
+backlog
+staging
+rollback
+API gateway
+load balancer
+Docker

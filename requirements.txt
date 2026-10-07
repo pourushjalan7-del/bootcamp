@@ -1,0 +1,11 @@
+# Run `pip freeze > requirements.lock` after your first working install and submit that too.
+faster-whisper>=1.1.0
+pyannote.audio>=3.3.2
+torch
+pydantic>=2.0
+openai>=1.40
+jellyfish>=1.0
+streamlit>=1.35
+fastapi>=0.110
+uvicorn>=0.29
+python-multipart
