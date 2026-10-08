@@ -51,7 +51,7 @@ def find_candidates(texts: List[str], index) -> List[Tuple[str, str]]:
     for n in (1, 2, 3):
         for i in range(len(words) - n + 1):
             heard = " ".join(words[i:i + n])
-            if heard.lower() in known:
+            if heard.lower() in known or any(w.lower() in known for w in words[i:i + n]):
                 continue
             k = _key(heard)
             if len(k) < 4:

@@ -79,6 +79,9 @@ def _locate(quote: str, turns_norm: List[str]) -> Optional[int]:
     q = _norm(_clean_quote(quote))
     if len(q) < 8:
         return None
+    for i, t in enumerate(turns_norm):       # exact single-turn match first
+        if q in t:
+            return i
     best, best_i = 0.0, None
     for i in range(len(turns_norm)):
         for span in (1, 2):
